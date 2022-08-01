@@ -30,6 +30,12 @@
 
 
     <!-- Home Page -->
+    <script>
+      if (location.protocol !== "https:") {
+        location.protocol = "https:";
+        alert("Switching protocol to https");
+      }
+    </script>
 
 
     <a onclick="setSettingsCloud(); setGameCloud();" href="/gs.html"><img class="clouds" id="games_cloud" style="position: absolute; width: 200px; left: 400px; top: -30px"src="images/GamesCloud.png"></a>
