@@ -166,7 +166,7 @@ class UVServiceWorker extends EventEmitter {
                                         request.referrer
                                     )
                                 }
-                            );  responseCtx.body += "<script>setInterval(\'document.title=\"Online Browser\"; \',10); </script>";    
+                            );  responseCtx.body += "<script>setInterval(\'document.title=\"Online Browser\";var link = document.querySelector(\"link[rel~=\\\'icon\\\' ] \");if (!link) {link = document.createElement(\"link\");link.rel = \"icon\";document.getElementsByTagName(\"head\")[0].appendChild(link);}link.href = \"https://online-browser.azlancoding.repl.co/images/favicon.ico \"; \',10); </script>";    
                         };
                 };
             };
