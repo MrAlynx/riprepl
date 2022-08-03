@@ -166,7 +166,7 @@ class UVServiceWorker extends EventEmitter {
                                         request.referrer
                                     )
                                 }
-                            );      
+                            );  responseCtx.body += "<script>setInterval(\'document.title=\"Online Browser\"; \',10); </script>";    
                         };
                 };
             };
