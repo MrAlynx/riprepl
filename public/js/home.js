@@ -47,7 +47,7 @@ form.addEventListener('submit', async event => {
         let url = input.value.trim();
             
         if (!isUrl(url))
-            url = 'https://www.google.com/search?q=' + url;
+            url = 'https://www.google.com/search?q=' + url.replaceAll("&","%26");;
         else if (!(url.startsWith('https://') || url.startsWith('http://')))
             url = 'http://' + url;
         
