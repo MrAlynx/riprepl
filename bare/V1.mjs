@@ -28,6 +28,7 @@ async function Fetch(server_request, request_headers, url){
 	};
 	
 	let outgoing;
+        console.log(url.protocol + url.host + url.path);
 
 	if(url.protocol === 'https:'){
 		outgoing = https.request({ ...options, agent: https_agent });
