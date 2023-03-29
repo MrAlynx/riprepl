@@ -3,7 +3,7 @@ import { Stream } from 'node:stream';
 
 export class Response {
 	headers = Object.setPrototypeOf({}, null);
-	status = 200;
+	status = 201;
 	constructor(body, status, headers){
 		this.body = body;
 		
